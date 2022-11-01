@@ -14,6 +14,13 @@ class LRUCache
   end
 
   def get(key)
+    # when you retrieve or insert an item, you should mark
+    # that item as now being the most recently used item in your cache 
+    if @map.include?(key)
+      # move the node to the end of the list
+    else
+
+    end
   end
 
   def to_s
